@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="main.js"></script>
-    <script src="node_modules\swiper\js\swiper.js"></script>
     <link rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.css">
     <link rel="stylesheet" href="node_modules\typeface-roboto\index.css">
-    <link rel="stylesheet" href="node_modules\swiper\css\swiper.css">
+    <link rel="stylesheet" href="node_modules\swiper\css\swiper.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="node_modules/jquery/dist/jquery.js"></script>
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
     <title>League Of Legends Project</title>
 </head>
@@ -19,7 +18,7 @@
             <div class="grid">
 
                 <div class="leftgrid">
-                    <div class="logo"><h2>Header Kit</h2></div>
+                    <div class="logo"><h2><strong>L</strong>eague<sup><strong>O</strong>f</sup><br><strong>L</strong>egends</h2></div>
                     <div class="leftflex">
                         <div class="titlesection">
                             <div class="titleph">
@@ -28,8 +27,8 @@
                             </div>
                             <p class="desc">Easiest way to find players, teams, coaches,<br> duo-partners and practice gamers.</p>
                             <div class="buttonsrow">
-                                <button type="button" class="btn">Find</button>
-                                <button type="button" class="btn">Improve</button>
+                                <button class="btn active">Find</button>
+                                <button class="btn">Improve</button>
                             </div>
                         </div>
                     </div>
@@ -40,22 +39,22 @@
                         <div class="rightflexfirstnav">
                             <ul class="nav">
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">All games</a>
+                                  <a class="first-nav nav-link activenav" href="#">All games</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Find</a>
+                                  <a class="first-nav nav-link" href="#">Find</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">News</a>
+                                  <a class="first-nav nav-link" href="#">News</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Community</a>
+                                  <a class="first-nav nav-link" href="#">Community</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Shop</a>
+                                  <a class="first-nav nav-link" href="#">Shop</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Contact</a>
+                                  <a class="first-nav nav-link" href="#">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -71,24 +70,47 @@
                             </div>
                             <ul class="nav">
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Warrior</a>
+                                  <a class="second-nav nav-link activenav" href="#">Warrior</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Mage</a>
+                                  <a class="second-nav nav-link" href="#">Mage</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Tank</a>
+                                  <a class="second-nav nav-link" href="#">Tank</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">ADC</a>
+                                  <a class="second-nav nav-link" href="#">ADC</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Support</a>
+                                  <a class="second-nav nav-link" href="#">Support</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Jungler</a>
+                                  <a class="second-nav nav-link" href="#">Jungler</a>
                                 </li>
                             </ul>
+                        </div>
+
+
+                        <div class="swiper-container">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <img src="gallery\characters\renekton.png">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="gallery\characters\vi.png">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="gallery\characters\yasuo.png">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="gallery\characters\yi.png">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="gallery\characters\zed.png">
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
                         </div>
                     </div>
                 </div>
@@ -108,5 +130,7 @@
             </div>
         </div>
     </div>
+
+    <script src="node_modules\swiper\js\swiper.min.js"></script>
 </body>
 </html>

@@ -50,6 +50,18 @@ body .header .headerbg .grid .leftgrid .logo {
   color: #fff;
 }
 
+body .header .headerbg .grid .leftgrid .logo h2 {
+  font-size: 3.5em;
+}
+
+body .header .headerbg .grid .leftgrid .logo sup {
+  font-size: 0.5em;
+}
+
+body .header .headerbg .grid .leftgrid .logo strong {
+  color: #960000;
+}
+
 body .header .headerbg .grid .leftgrid .leftflex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,7 +70,7 @@ body .header .headerbg .grid .leftgrid .leftflex {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: auto auto 0 auto;
+  margin: auto auto 0 10%;
 }
 
 body .header .headerbg .grid .leftgrid .leftflex .titlesection {
@@ -88,6 +100,7 @@ body .header .headerbg .grid .leftgrid .leftflex .titlesection .titleph .find {
   text-align: right;
   font-size: 1.6em;
   padding-bottom: 0.3em;
+  color: #b4b4b4;
 }
 
 body .header .headerbg .grid .leftgrid .leftflex .titlesection .titleph h1 {
@@ -102,13 +115,14 @@ body .header .headerbg .grid .leftgrid .leftflex .titlesection .titleph h1 {
 body .header .headerbg .grid .leftgrid .leftflex .titlesection .titleph sup {
   font-size: 0.5em;
   font-weight: 600;
-  color: white;
+  color: #b4b4b4;
   padding-right: 3%;
 }
 
 body .header .headerbg .grid .leftgrid .leftflex .titlesection .desc {
   font-size: 1.3em;
   padding-bottom: 1em;
+  color: #b4b4b4;
 }
 
 body .header .headerbg .grid .leftgrid .leftflex .titlesection .buttonsrow {
@@ -127,12 +141,27 @@ body .header .headerbg .grid .leftgrid .leftflex .titlesection .buttonsrow .btn 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 1.3em;
-  border-radius: 16px;
+  margin: auto;
+  border-radius: 20px;
   padding: 10px 20px;
-  background-color: #960000;
+  background-color: transparent;
   color: white;
+  width: 8em;
+  -webkit-box-shadow: 0 0 20px #960000;
+          box-shadow: 0 0 20px #960000;
+}
+
+body .header .headerbg .grid .leftgrid .leftflex .titlesection .buttonsrow .btn:hover {
+  -webkit-box-shadow: 0 0 30px #960000;
+          box-shadow: 0 0 30px #960000;
+}
+
+body .header .headerbg .grid .leftgrid .leftflex .titlesection .buttonsrow .active {
+  background-color: #7d0000;
 }
 
 body .header .headerbg .grid .rightgrid {
@@ -180,9 +209,40 @@ body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav ul li {
 
 body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav ul a {
   text-decoration: none;
-  color: white;
+  color: #b4b4b4;
   font-size: 1.3em;
   font-weight: 400;
+  position: relative;
+}
+
+body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav ul a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #960000;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav ul a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav ul .activenav {
+  color: #fff;
+  border-bottom: 3px solid #7d0000;
 }
 
 body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav {
@@ -228,6 +288,8 @@ body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav .secondna
 body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav .secondnavtitlesection .titleh2 p {
   text-align: right;
   font-size: 1.2em;
+  color: #b4b4b4;
+  font-weight: 500;
 }
 
 body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav .secondnavtitlesection .titleh2 h2 {
@@ -262,9 +324,64 @@ body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul li {
 
 body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul a {
   text-decoration: none;
-  color: white;
+  color: #b4b4b4;
   font-size: 1.3em;
   font-weight: 400;
+  position: relative;
+}
+
+body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #960000;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul .activenav {
+  color: #fff;
+  border-bottom: 3px solid #7d0000;
+}
+
+body .header .headerbg .grid .rightgrid .rightflex .swiper-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+body .header .headerbg .grid .rightgrid .rightflex .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+body .header .headerbg .grid .rightgrid .rightflex .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 50%;
+  height: auto;
+  margin: auto;
 }
 
 body .header .headerbg .grid .rightnavgrid {
