@@ -116,14 +116,17 @@ body{
                     height: 100%;
                     width: 100%;
                     margin: 0;
-                    .rightflex{
-                        display: flex;
-                        flex-direction: column;
+                    .rightgrid{
+                        display: grid;
+                        grid-template-rows: 25% 25% 50%;
+                        margin: 5% auto auto auto;
                         .rightflexfirstnav{
                             display: flex;
                             flex-direction: column;
-                            margin: 5% auto 0 auto;
-                            height: 20%;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+                            height: 100%;
                             width: 100%;
                             ul{
                                 width: 80%;
@@ -167,7 +170,7 @@ body{
                             display: flex;
                             flex-direction: column;
                             margin: 0 auto;
-                            height: 20%;
+                            height: 100%;
                             width: 100%;
                             .secondnavtitlesection{
                                 display: flex;
@@ -237,15 +240,14 @@ body{
                             }
                         }
                         .swiper-container{
-                            display: flex;
-                            flex-direction: column;
-                            height: 300px;
-                            width: 300px;
-                            margin: 0 auto;
+                            width: 100%;
+                            height: 100%;
+                            margin: 0;
                             .swiper-wrapper{
                                 .swiper-slide{
-                                    width: 100%;
-                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
                                     img{
                                         width: 50%;
                                         height: auto;

@@ -172,17 +172,15 @@ body .header .headerbg .grid .rightgrid {
   margin: 0;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+body .header .headerbg .grid .rightgrid .rightgrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 25% 25% 50%;
+      grid-template-rows: 25% 25% 50%;
+  margin: 5% auto auto auto;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexfirstnav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,24 +188,30 @@ body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 5% auto 0 auto;
-  height: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  height: 100%;
   width: 100%;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav ul {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexfirstnav ul {
   width: 80%;
   height: auto;
   justify-items: right;
   margin: 0 3% auto auto;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav ul li {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexfirstnav ul li {
   list-style: none;
   margin: 0 0 auto auto;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav ul a {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexfirstnav ul a {
   text-decoration: none;
   color: #b4b4b4;
   font-size: 1.3em;
@@ -215,7 +219,7 @@ body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav ul a {
   position: relative;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav ul a::after {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexfirstnav ul a::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -233,19 +237,19 @@ body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav ul a::afte
           transform-origin: right;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav ul a:hover::after {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexfirstnav ul a:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: left;
           transform-origin: left;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexfirstnav ul .activenav {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexfirstnav ul .activenav {
   color: #fff;
   border-bottom: 3px solid #7d0000;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexsecondnav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,11 +258,11 @@ body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  height: 20%;
+  height: 100%;
   width: 100%;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav .secondnavtitlesection {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexsecondnav .secondnavtitlesection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,7 +277,7 @@ body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav .secondna
   height: auto;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav .secondnavtitlesection .titleh2 {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexsecondnav .secondnavtitlesection .titleh2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,28 +289,28 @@ body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav .secondna
   line-height: 0px;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav .secondnavtitlesection .titleh2 p {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexsecondnav .secondnavtitlesection .titleh2 p {
   text-align: right;
   font-size: 1.2em;
   color: #b4b4b4;
   font-weight: 500;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav .secondnavtitlesection .titleh2 h2 {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexsecondnav .secondnavtitlesection .titleh2 h2 {
   line-height: 0.6em;
   font-size: 3.5em;
   font-weight: 700;
   color: #960000;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav .secondnavtitlesection .pagination {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexsecondnav .secondnavtitlesection .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexsecondnav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,11 +322,11 @@ body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul {
           justify-content: space-between;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul li {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexsecondnav ul li {
   list-style: none;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul a {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexsecondnav ul a {
   text-decoration: none;
   color: #b4b4b4;
   font-size: 1.3em;
@@ -330,7 +334,7 @@ body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul a {
   position: relative;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul a::after {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexsecondnav ul a::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -348,37 +352,37 @@ body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul a::aft
           transform-origin: right;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul a:hover::after {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexsecondnav ul a:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: left;
           transform-origin: left;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .rightflexsecondnav ul .activenav {
+body .header .headerbg .grid .rightgrid .rightgrid .rightflexsecondnav ul .activenav {
   color: #fff;
   border-bottom: 3px solid #7d0000;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .swiper-container {
+body .header .headerbg .grid .rightgrid .rightgrid .swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body .header .headerbg .grid .rightgrid .rightgrid .swiper-container .swiper-wrapper .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 300px;
-  width: 300px;
-  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body .header .headerbg .grid .rightgrid .rightflex .swiper-container .swiper-wrapper .swiper-slide {
-  width: 100%;
-  height: 100%;
-}
-
-body .header .headerbg .grid .rightgrid .rightflex .swiper-container .swiper-wrapper .swiper-slide img {
+body .header .headerbg .grid .rightgrid .rightgrid .swiper-container .swiper-wrapper .swiper-slide img {
   width: 50%;
   height: auto;
   margin: auto;
