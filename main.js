@@ -27,11 +27,26 @@ $(document).ready(function(){
 //swiper 
 $(document).ready(function(){
   var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+    slidesPerView: 2.5,
+    centeredSlides: true,
+    spaceBetween: 200,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
+    breakpoints:{
+      1394:{
+        slidesPerView: 2.5,
+        spaceBetween: 200,
+      },
+      1150:{
+        slidesPerView: 2.2,
+        spaceBetween: 200,
+      },
+      1:{
+        slidesPerView: 1,
+      },
+    }
   });
 });
 //_______
