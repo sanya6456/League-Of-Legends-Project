@@ -316,19 +316,13 @@ body .header .headerbg .grid .leftgrid .logo h2 {
 
 @media only screen and (max-width: 720px) {
   body .header .headerbg .grid .leftgrid .logo h2 {
-    font-size: 3.5em;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  body .header .headerbg .grid .leftgrid .logo h2 {
     font-size: 3em;
   }
 }
 
-@media only screen and (max-height: 710px) {
+@media only screen and (max-width: 400px) {
   body .header .headerbg .grid .leftgrid .logo h2 {
-    font-size: 2.7em;
+    font-size: 2em;
   }
 }
 
@@ -345,18 +339,6 @@ body .header .headerbg .grid .leftgrid .logo sup {
 @media only screen and (max-width: 720px) {
   body .header .headerbg .grid .leftgrid .logo sup {
     font-size: 0.5em;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  body .header .headerbg .grid .leftgrid .logo sup {
-    font-size: 0.4em;
-  }
-}
-
-@media only screen and (max-height: 710px) {
-  body .header .headerbg .grid .leftgrid .logo sup {
-    font-size: 0.4em;
   }
 }
 
@@ -442,9 +424,9 @@ body .header .headerbg .grid .leftgrid .leftflex .titlesection .titleph .find {
   }
 }
 
-@media only screen and (max-height: 710px) {
+@media only screen and (max-width: 400px) {
   body .header .headerbg .grid .leftgrid .leftflex .titlesection .titleph .find {
-    font-size: 1.4em;
+    font-size: 1em;
   }
 }
 
@@ -481,6 +463,12 @@ body .header .headerbg .grid .leftgrid .leftflex .titlesection .titleph h1 {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  body .header .headerbg .grid .leftgrid .leftflex .titlesection .titleph h1 {
+    font-size: 2em;
+  }
+}
+
 body .header .headerbg .grid .leftgrid .leftflex .titlesection .titleph sup {
   font-size: 0.5em;
   font-weight: 600;
@@ -497,18 +485,6 @@ body .header .headerbg .grid .leftgrid .leftflex .titlesection .titleph sup {
 @media only screen and (max-width: 720px) {
   body .header .headerbg .grid .leftgrid .leftflex .titlesection .titleph sup {
     font-size: 0.5em;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  body .header .headerbg .grid .leftgrid .leftflex .titlesection .titleph sup {
-    font-size: 0.4em;
-  }
-}
-
-@media only screen and (max-height: 710px) {
-  body .header .headerbg .grid .leftgrid .leftflex .titlesection .titleph sup {
-    font-size: 0.4em;
   }
 }
 
@@ -542,6 +518,12 @@ body .header .headerbg .grid .leftgrid .leftflex .titlesection .desc {
   }
 }
 
+@media only screen and (max-height: 710px) {
+  body .header .headerbg .grid .leftgrid .leftflex .titlesection .desc {
+    font-size: 0.8em;
+  }
+}
+
 body .header .headerbg .grid .leftgrid .leftflex .titlesection .buttonsrow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,7 +544,7 @@ body .header .headerbg .grid .leftgrid .leftflex .titlesection .buttonsrow .btn 
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.3em;
-  margin: auto;
+  margin: auto 5%;
   border-radius: 20px;
   padding: 10px 20px;
   background-color: transparent;
@@ -598,6 +580,12 @@ body .header .headerbg .grid .leftgrid .leftflex .titlesection .buttonsrow .btn:
 @media only screen and (max-height: 710px) {
   body .header .headerbg .grid .leftgrid .leftflex .titlesection .buttonsrow .btn {
     font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body .header .headerbg .grid .leftgrid .leftflex .titlesection .buttonsrow .btn {
+    font-size: 0.8em;
   }
 }
 
